@@ -1,0 +1,7 @@
+#!/bin/bash
+TIMESTAMP=`date +%s`
+W=1296
+H=972
+raspistill -w $W -h $H -drc high -q 100 -o /usr/share/grafana/public/img/current.jpg
+#raspistill -w $W -h $H -drc high -q 100 -o "/mnt/usb/timelapse/$TIMESTAMP.jpg"
+#cp "/mnt/usb/timelapse/$TIMESTAMP.jpg" /usr/share/grafana/public/img/current.jpg

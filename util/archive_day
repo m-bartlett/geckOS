@@ -1,0 +1,13 @@
+#!/bin/bash
+TLDIR="/mnt/usb/timelapse/"
+cd $TLDIR
+
+DATE=${1:-`date "+%m_%d_%y"`}
+
+#Make sure not to let any images after 11:59 get mixed in
+mkdir -p "$TLDIR/$DATE"
+mv *.jpg "$TLDIR/$DATE/"
+cd $TLDIR/$DATE
+tar czf "$DATE.tgz" ./*.jpg && rm *.jpg
+mv "$DATE.tgz" "$TLDIR/archives/"
+rmdir "$TLDIR/$DATE"
