@@ -1,5 +1,7 @@
 <p align="center"><img src="geckOS_banner.png" alt="banner" title="geckOS MOTD"/></p>
 
+https://github.com/user-attachments/assets/f1b26c5a-6912-44c7-b1ef-243436713047
+
 Raspberry Pi controlled gecko terrarium with automated humidity control, temperature control, sensor data aggregation and analytics, and remote viewing.
 
 <br/>
